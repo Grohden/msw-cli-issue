@@ -1,0 +1,18 @@
+{
+  "name": "with-playwright",
+  "scripts": {
+    "dev": "web-dev-server --root-dir ./app --node-resolve --watch",
+    "test": "playwright test",
+    "postinstall": "pnpm exec playwright install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@web/dev-server": "^0.2.1",
+    "msw": "2.0.14",
+    "playwright": "^1.33.0",
+    "typescript": "^5.0.4"
+  },
+  "msw": {
+    "workerDirectory": "app"
+  }
+}
