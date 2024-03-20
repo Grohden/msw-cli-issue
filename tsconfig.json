@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable"
+    ],
+    "allowJs": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "tsBuildInfoFile": "dist/.tsbuildinfo",
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": [
+        "./src/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ],
+      "@generated/*": [
+        "./generated/*"
+      ],
+      "react": [
+        "./node_modules/@types/react"
+      ]
+    },
+    "types": [
+      "jest",
+      "node",
+      "@types/intercom-web",
+      "google.maps",
+      "@types/gtag.js"
+    ],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.js",
+    "./playwright.config.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "public",
+    ".eslintrc.*",
+    "public/mockServiceWorker.js",
+  ]
+}
